@@ -1,0 +1,5 @@
+<h2>Notifications</h2>
+<div *ngIf="notificationSVC.notifications.length">
+  <button class="clear" (click)="notificationSVC.clearNotifications()">clear</button>
+  <div *ngFor="let notification of notificationSVC.notifications">{{ notification.message }}</div>
+</div>
